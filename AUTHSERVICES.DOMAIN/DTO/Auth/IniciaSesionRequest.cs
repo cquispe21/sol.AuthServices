@@ -1,0 +1,15 @@
+﻿
+using System.Text.Json.Serialization;
+
+
+namespace AUTHSERVICES.DOMAIN.DTO.Auth
+{
+    public class IniciaSesionRequest
+    {
+        [JsonPropertyName("correo")]
+        public string Correo { get; set; }
+
+        [JsonPropertyName("clave")]
+        public string Clave { get; set; }
+    }
+}
